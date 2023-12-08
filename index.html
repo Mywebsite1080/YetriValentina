@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yetri Valentina</title>
     <style>
-    body {
-    height: 100vh; /* 100% tinggi viewport */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url('backgroung.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    }
-
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('backgroung.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 
         nav {
             background-image: url('BIOLOGI.jpg');
@@ -89,25 +88,37 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background-image: url('backgroung-mobile.jpg');
+            }
+
+            nav {
+                background-image: url('BIOLOGI-mobile.jpg');
+            }
+
+            /* Tambahkan aturan CSS responsif lainnya di sini */
+        }
     </style>
 </head>
 <body>
-<nav>
-    <a href="index.html">Home</a>
-    <div class="dropdown">
-        <button class="dropbtn">Materi 
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="MKU.html">Kuliah Umum</a>
-            <a href="Materi.html">Materi Biologi</a>
-            <a href="download.html">Download Materi</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Materi 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="MKU.html">Kuliah Umum</a>
+                <a href="Materi.html">Materi Biologi</a>
+                <a href="download.html">Download Materi</a>
+            </div>
         </div>
-    </div>
-    <a href="Tentang.html">Tentang Saya</a>
-</nav>
+        <a href="Tentang.html">Tentang Saya</a>
+    </nav>
 
-<h1>Selamat Datang</h1>
-<p>Silakan Pilih Menu Untuk Belajar Materi</p>
+    <h1>Selamat Datang</h1>
+    <p>Silakan Pilih Menu Untuk Belajar Materi</p>
 </body>
 </html>
